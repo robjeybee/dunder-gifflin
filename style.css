@@ -7,12 +7,15 @@ body {
     font-family: 'AmericanTypeMedium', sans-serif;
     color: #f7f7f7;
     background-color: #121212;
+    padding: 0;
+    margin: 0;
 }
 
 #header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 #header h1 {
@@ -20,7 +23,7 @@ body {
 }
 
 #header-img {
-    width: 550px;
+    width: 450px;
     border-radius: 10px;
     border: 5px solid #f7f7f7;
 }
@@ -36,4 +39,113 @@ span {
     color: #121212;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+p {
+    font-size: 36px;
+}
+
+.gif-section {
+    background-color: #f7f7f7;
+    color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gif-section-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    max-width: 1000px;
+}
+
+.gif-section-item-number {
+    margin-bottom: 0px;
+}
+
+.gif-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+    border: 5px solid #82A4D7;
+    background-image: url('/images/Dunder_Mifflin_Paper_Image.png');
+    background-position: center;
+    background-size: contain;
+    transition: ease-in-out .25s;
+    position: relative;
+}
+
+.gif-img:hover::before {
+    color: #f7f7f7;
+    font-size: 22px;
+    text-shadow: 0px 0px 3px black;
+    position: absolute;
+    background: #82a4d7b7;;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pam-gif:hover::before {
+    content: 'Pam Beesly';
+}
+
+.pam-gif:hover {
+    background-image: url('https://media1.giphy.com/media/0mKPytMujTds4e26IS/giphy.gif?cid=ecf05e47rue9yjz1kmvg52dlnocrqnkffs3ggtqsceghjv6h&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+}
+
+.jim-gif:hover::before {
+    content: 'Jim Halpert';
+}
+
+.jim-gif:hover {
+    background-image: url('https://media1.giphy.com/media/9Dw95n3X406Ag/giphy.gif?cid=ecf05e47tukqsvd5snbkye2o21kiu6b9j2r3026ic2va3mg1&ep=v1_gifs_related&rid=giphy.gif&ct=g');
+}
+
+.michael-gif:hover {
+    background-image: url('https://media0.giphy.com/media/cXblnKXr2BQOaYnTni/giphy.gif?cid=ecf05e47p9gtcyx4u436iua9y5f1kbd4gm8ya64ac6kgy8qw&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+}
+
+.michael-gif:hover::before {
+    content: 'Michael Scott';
+}
+
+.dwight-gif:hover {
+    background-image: url('https://media1.giphy.com/media/txir5y39RpFC0/giphy.gif?cid=ecf05e477dsz39ro7tlnxzix6lie2kogrlip4si86hc7hvhq&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+}
+
+.dwight-gif:hover::before {
+    content: 'Dwight Schrute';
+}
+
+.angela-gif:hover {
+    background-image: url('https://media0.giphy.com/media/gVUqIFaYGs5u44IKLb/giphy.gif?cid=ecf05e47ur4s1irezu0ahmul57bdfj4prhyhep9afzbjahs7&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+}
+
+.angela-gif:hover::before {
+    content: 'Angela Martin';
+}
+
+.gif-img:hover {
+    cursor: pointer;
+    transition: ease-in-out .25s;
+    background-position: center;
+    background-size: cover;
+}
+
+.gif-section h2 {
+    margin-bottom: 5px;
+}
+
+.gif-section h3 {
+    color: #535353;
+    margin: 0;
+    padding: 20px 0;
 }
