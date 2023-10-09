@@ -46,20 +46,30 @@ p {
 }
 
 .gif-section {
-    background-color: #f7f7f7;
+    background-color: #fdfdfd;
     color: #121212;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 6px;
 }
 
 .gif-section-item {
+    height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
-    max-width: 1000px;
+    text-align: center;
+    height: 700px;
+    width: 500px;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f6f3f3;
+    box-shadow: #d5d5d5 1px 1px 1px;
 }
 
 .gif-section-item-number {
@@ -142,10 +152,20 @@ p {
 
 .gif-section h2 {
     margin-bottom: 5px;
+    width: 80%;
+    font-size: 18px;
 }
 
 .gif-section h3 {
     color: #535353;
     margin: 0;
     padding: 20px 0;
+}
+
+.gif-section-title {
+    background-color: #fdfdfd;
+    color: #121212;
+    text-align: center;
+    font-size: 36px;
+    padding: 80px 0px;
 }
