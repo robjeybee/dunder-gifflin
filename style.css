@@ -107,7 +107,7 @@ p {
     content: 'Pam Beesly';
 }
 
-.pam-gif:hover {
+.pam-gif:hover, .pam-gif:focus {
     background-image: url('https://media1.giphy.com/media/0mKPytMujTds4e26IS/giphy.gif?cid=ecf05e47rue9yjz1kmvg52dlnocrqnkffs3ggtqsceghjv6h&ep=v1_gifs_search&rid=giphy.gif&ct=g');
 }
 
